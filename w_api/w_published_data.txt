@@ -1,0 +1,1 @@
+{"pages":["index.html","blog.html","productos.html","quienes-somos.html","contacto.html"],"protected":{"inicio":false,"Quienes somos":false,"Productos":false,"BLOG":false,"Contacto":false},"dynamic":{"blog":true}}
