@@ -1518,4 +1518,7 @@ div.paragraph ol, div.paragraph ol li {
 
 #main-image {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
