@@ -235,6 +235,47 @@ body.wsite-background {background-attachment: fixed !important;}.wsite-backgroun
 		color: white;
 		font-family: Lato;
 }
+.parallax > h1 {
+	font-size: 3em;
+	margin-bottom: 10px;
+}
+.parallax > ul {
+	font-size: 1.5em;
+}
+.parallax > ul > li {
+	margin-bottom: 5px;
+}
+.footer-submenu-container {
+	padding: 20px 100px;
+	margin-bottom: 80px;
+}
+.footer-submenu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+.footer-submenu-item {
+	width: 30%;
+}
+.footer-submenu-nav > .footer-submenu-nav-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.footer-submenu-nav > .footer-submenu-nav-container > .footer-submenu-nav-item {
+	margin: 5px 5px;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-family: Lato;
+	font-weight: bold;
+}
+.footer-submenu-nav-item:hover > a {
+	text-decoration: none;
+	color: #a1a1a1;
+}
+
 .developer-footer {
 	display: flex;
 	align-items: center;
@@ -254,6 +295,18 @@ body.wsite-background {background-attachment: fixed !important;}.wsite-backgroun
 	}
 	.catch-frase-text > p {
 		font-size: 1em;
+	}
+	.squares-over {
+		flex-direction: column;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.square {
+		top: 0px;
+		margin-bottom: 10px;
+	}
+	.footer-submenu-container {
+		padding: 20px;
 	}
 }
 </style>
@@ -393,18 +446,18 @@ var STYLE_PREFIX = 'wsite';
 							</div>
 							<img class="d-block w-100" src="/uploads/1/0/9/9/109947473/foto-combinada-1_orig.jpg" alt="First slide">
 						</div>
-						<!-- <div class="carousel-item">
+						<div class="carousel-item">
 							<div class="catch-frase">
-								<div class="catch-frase-text"><p class="animated slideInUp">LEl</p></div>
+								<div class="catch-frase-text"><p class="animated slideInUp">Desarrollo y evolución de procesos</p></div>
 							</div>
 							<img class="d-block w-100" src="/uploads/1/0/9/9/109947473/foto-combinada-1_orig.jpg" alt="Second slide">
 						</div>
 						<div class="carousel-item">
 							<div class="catch-frase">
-								<div class="catch-frase-text"><p class="animated slideInUp">not lel</p></div>
+								<div class="catch-frase-text"><p class="animated slideInUp">Desarrollo y evolución de procesos</p></div>
 							</div>
 							<img class="d-block w-100" src="/uploads/1/0/9/9/109947473/foto-combinada-1_orig.jpg" alt="Third slide">
-						</div> -->
+						</div>
 					</div>
 					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -594,6 +647,69 @@ var STYLE_PREFIX = 'wsite';
 	</div>
 
 	<div>
+		<div class="footer-submenu-container">
+			<div class="footer-submenu">
+				<div class="footer-submenu-item">
+					<div class="footer-submenu-nav">
+						<div class="footer-submenu-nav-container">
+							<span id="pg526646547955105866" class="footer-submenu-nav-item">
+								<a href="/quienes-somos.html" class="wsite-menu-item">
+					Nosotros
+				</a>
+			</span>
+							<span id="pg454677903357412231" class="footer-submenu-nav-item">
+								<a href="/productos.html" class="wsite-menu-item">
+					Servicios
+				</a>
+			</span>
+							<span id="pg526646547955105866" class="footer-submenu-nav-item">
+								<a href="/quienes-somos.html" class="wsite-menu-item">
+					Portafolio
+				</a>
+			</span>
+							<span id="pg348659541506008480" class="footer-submenu-nav-item">
+								<a href="/blog.html" class="wsite-menu-item">
+					BLOG
+				</a>
+			</span>
+							<span id="pg735143605499080371" class="footer-submenu-nav-item">
+								<a href="/contacto.html" class="wsite-menu-item">
+					Contactos
+				</a>
+			</span>
+			</div>
+		</div>
+				</div>
+				<div class="footer-submenu-item">
+					<div class="location-container row">
+						<div class="col-md-1 col-xs-2">
+							<i class="fa fa-map" aria-hidden="true"></i>
+						</div>
+						<div class="col-md-10 col-xs-8">
+							<div class="">
+								#street
+							</div>
+							<div class="">
+								#city
+							</div>
+							<div class="">
+								#number
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-submenu-item">
+					<div class="info-container row">
+						<div class="col-md-1">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+						</div>
+						<div class="col-md-10">
+							#info
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 			<!-- <div class="row">
 				<div class="col-md-4">
 					#miso menu
@@ -605,7 +721,7 @@ var STYLE_PREFIX = 'wsite';
 					#cosa de telefonos
 				</div>
 			</div> -->
-			<div class="developer-footer">Sitio desarrollado por John ball john. A cargo de <a href="http://www.hostgator.mx" target="_blank">Hostgator Mexico</a></div>
+			<div class="developer-footer">Sitio desarrollado por # Developer #. A cargo de <a href="http://www.hostgator.mx" target="_blank">Hostgator Mexico</a></div>
 	</div>
 
 	<script type="text/javascript" src="/files/theme/plugins.js?1502902050"></script>
