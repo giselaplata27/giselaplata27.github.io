@@ -13,12 +13,27 @@
 <meta name="description" content="LADDER (Especialistas en control y automatización de México)." />
 <meta name="keywords" content="ladder, integrador, control, automatización, servicios, monterrey, Coahuila, industrial, soporte, programación, siemens, allen,bradley, rockwell, omrom, keyence, sew, red lion, abb, wonderware, intouch, cognex, honeywell, mecatronica, robotica,controlador" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0; user-scalable=no;">
 
+		<!-- bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+		<!-- fontawesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Animate.css -->
+			<link rel="stylesheet"
+	  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+	  integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+	  crossorigin="anonymous">
+	  <!-- or -->
+	  <link rel="stylesheet"
+	  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+	  integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+	  crossorigin="anonymous">
 
 		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="//cdn2.editmysite.com/css/sites.css?buildTime=1503007006" />
 <link rel="stylesheet" type="text/css" href="//cdn2.editmysite.com/css/old/fancybox.css?1503007006" />
@@ -85,17 +100,15 @@
 .wsite-background {background-image: url("/uploads/1/0/9/9/109947473/background-images/1955191062.png") !important;background-repeat: no-repeat !important;background-position: 50.00% 76.08% !important;background-size: 100% !important;background-color: transparent !important;}
 body.wsite-background {background-attachment: fixed !important;}.wsite-background.wsite-custom-background{ background-size: cover !important}
 
-.hero-carousel {
-	height: calc(100vh - 30px);
+.hero-carousel, .carousel-inner, .carousel-item {
+	height: 100vh;
 	width: 100%;
 	/* position: relative; */
 }
 
-.carousel-item {
-	/* display: flex;
-	justify-content: center;
-	align-items: center; */
-	/* position: relative; */
+.carousel-item > img {
+	width: 100%;
+	height: auto;
 }
 
 .catch-frase {
@@ -103,29 +116,34 @@ body.wsite-background {background-attachment: fixed !important;}.wsite-backgroun
 	height: 100%;
 	z-index: 1000000;
 	font-size: 3em;
-	color: red;
 	position: absolute;
 	top: 0;
 	left: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 100px;
 }
 
 .catch-frase-text {
-	width: 100%;
-	background: rgba(0,0,0,0.4);
+	width: 65%;
+	/* background: rgba(0,0,0,0.4); */
 	height: auto;
 	padding: 20px;
 	text-align: center;
 }
 
+.catch-frase-text > p {
+	font-family: Advent Pro;
+	font-weight: bold;
+	color: white;
+	font-size: 2em;
+	margin: 0px;
+}
 
 .contact-header {
 	width: 100%;
 	height: auto;
-	background: blue;
+	background: #113C5C;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -141,9 +159,9 @@ body.wsite-background {background-attachment: fixed !important;}.wsite-backgroun
 
 .squares-over {
 	width: 100%;
-	background: red;
+	background: white;
 	position: relative;
-	z-index: 10000;
+	z-index: 10;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -153,11 +171,90 @@ body.wsite-background {background-attachment: fixed !important;}.wsite-backgroun
 	top: -60px;
 	height: 200px;
 	width: 200px;
-	background: rgba(0,0,0,0.4);
+	background: white;
 	border-radius: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+	position: relative;
+}
+.square > .icon-container {
+	background: #113C5C;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 5px;
+}
+.icon-container > .icon {
+	font-size: 3em;
+	color: white;
+}
+.square > .title {
+	font-size: 1.5em;
+	color: #113C5C;
+}
+.square:hover > .over-square {
+	top: 0px;
+}
+.over-square {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #113C5C;
+	border-radius: 20px;
+	top: 200px;
+	transition: top 150ms ease-out;
+}
+.over-square > .text {
+	font-size: 1em;
+	color: white;
+}
+.parallax {
+    /* The image used */
+    background-image: url("/uploads/1/0/9/9/109947473/foto-combinada-1_orig.jpg");
+
+    /* Set a specific height */
+    height: 500px;
+		padding: 5% 20%;
+		margin-bottom: 50px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+		color: white;
+		font-family: Lato;
+}
+.developer-footer {
+	display: flex;
+	align-items: center;
+	justify-content:
+	padding: 10px;
+	align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+@media screen and (min-width: 320px) and (max-width: 680px) {
+	.carousel-item {
+		overflow: hidden;
+	}
+	.carousel-item > img {
+		width: auto !important;
+		height: 100vh;
+	}
+	.catch-frase-text > p {
+		font-size: 1em;
+	}
 }
 </style>
 		<script>
@@ -292,22 +389,22 @@ var STYLE_PREFIX = 'wsite';
 					<div class="carousel-inner">
 						<div class="carousel-item active">
 							<div class="catch-frase">
-								<div class="catch-frase-text">Desarrollo y evolución de procesos</div>
+								<div class="catch-frase-text"><p class="animated slideInUp">Desarrollo y evolución de procesos</p></div>
 							</div>
 							<img class="d-block w-100" src="/uploads/1/0/9/9/109947473/foto-combinada-1_orig.jpg" alt="First slide">
 						</div>
-						<div class="carousel-item">
+						<!-- <div class="carousel-item">
 							<div class="catch-frase">
-								<div class="catch-frase-text">LEl</div>
+								<div class="catch-frase-text"><p class="animated slideInUp">LEl</p></div>
 							</div>
 							<img class="d-block w-100" src="/uploads/1/0/9/9/109947473/foto-combinada-1_orig.jpg" alt="Second slide">
 						</div>
 						<div class="carousel-item">
 							<div class="catch-frase">
-								<div class="catch-frase-text">not lel</div>
+								<div class="catch-frase-text"><p class="animated slideInUp">not lel</p></div>
 							</div>
 							<img class="d-block w-100" src="/uploads/1/0/9/9/109947473/foto-combinada-1_orig.jpg" alt="Third slide">
-						</div>
+						</div> -->
 					</div>
 					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -321,13 +418,31 @@ var STYLE_PREFIX = 'wsite';
 				<div class="">
 					<div class="squares-over">
 						<div class="square">
-							1asdfasf
+							<div class="icon-container">
+								<i class="icon fa fa-connectdevelop" aria-hidden="true"></i>
+							</div>
+							<span class="title">#title</span>
+							<div class="over-square">
+								<span class="text">#text</span>
+							</div>
 						</div>
 						<div class="square">
-							2asdfsadf
+							<div class="icon-container">
+								<i class="icon fa fa-connectdevelop" aria-hidden="true"></i>
+							</div>
+							<span class="title">#title</span>
+							<div class="over-square">
+								<span class="text">#text</span>
+							</div>
 						</div>
 						<div class="square">
-							3asdfsadf
+							<div class="icon-container">
+								<i class="icon fa fa-connectdevelop" aria-hidden="true"></i>
+							</div>
+							<span class="title">#title</span>
+							<div class="over-square">
+								<span class="text">#text</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -404,7 +519,15 @@ var STYLE_PREFIX = 'wsite';
 	</div>
 	</div>
 	<div id="main-wrap">
-		<div id="wsite-content" class="wsite-elements wsite-not-footer">
+		<div class="parallax">
+			<h1>#Title</h1>
+			<ul>
+				<li>#item</li>
+				<li>#item</li>
+				<li>#item</li>
+			</ul>
+		</div>
+		<!-- <div id="wsite-content" class="wsite-elements wsite-not-footer">
 			<div class="wsite-section-wrap">
 				<div class="wsite-section wsite-body-section wsite-background-1 wsite-custom-background" style="height: 840px;">
 					<div class="wsite-section-content">
@@ -466,12 +589,12 @@ var STYLE_PREFIX = 'wsite';
 				</div>
 			</div>
 
-		</div>
+		</div> -->
 
 	</div>
 
-	<div id="">
-			<div class="row">
+	<div>
+			<!-- <div class="row">
 				<div class="col-md-4">
 					#miso menu
 				</div>
@@ -481,8 +604,8 @@ var STYLE_PREFIX = 'wsite';
 				<div class="col-md-4">
 					#cosa de telefonos
 				</div>
-			</div>
-			<div class="developer-footer">Sitio desarrollado por John ball john. A cargo de<a href="http://www.hostgator.mx" target="_blank">Hostgator Mexico</a></div>
+			</div> -->
+			<div class="developer-footer">Sitio desarrollado por John ball john. A cargo de <a href="http://www.hostgator.mx" target="_blank">Hostgator Mexico</a></div>
 	</div>
 
 	<script type="text/javascript" src="/files/theme/plugins.js?1502902050"></script>
