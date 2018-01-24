@@ -127,9 +127,18 @@ body.menu-open > #banner-wrap > .sticky-wrapper > #header-wrap > #mobile-nav {
 .products-title {
 	font-size: 2em;
 	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.team-container {
+	padding-top: 0px;
+}
+.products-secondary-title {
+	font-size: 1.5em;
+	margin-bottom: 20px;
+	text-transform: uppercase;
 }
 .products-text {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	margin-bottom: 20px;
 }
 .developer-footer {
@@ -141,6 +150,34 @@ body.menu-open > #banner-wrap > .sticky-wrapper > #header-wrap > #mobile-nav {
   justify-content: flex-start;
   padding: 10px;
 }
+.partners-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.partner-container {
+	height: 50px;
+	width: auto;
+	margin: 20px;
+}
+.partner-logo {
+	height: 100%;
+	width: auto;
+}
+.call-to-action-row {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+}
+.call-to-action-btn {
+	margin-right: 30px;
+	width: 300px;
+	padding: 20px 0px;
+}
 @media screen and (min-width: 320px) and (max-width: 680px) {
 	.about-us-media-title {
 		font-size: 3em;
@@ -149,8 +186,35 @@ body.menu-open > #banner-wrap > .sticky-wrapper > #header-wrap > #mobile-nav {
 		padding: 1em 2em;
 	}
 	.products-text {
-		text-align: justify; 
+		text-align: justify;
 	}
+	.partners-container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.partner-container {
+		width: 100%;
+		height: auto;
+	}
+	.partner-logo {
+		width: 100%;
+		height: auto;
+	}
+	.call-to-action-container {
+		padding-top: 0px;
+	}
+	.call-to-action-row {
+		flex-direction: column;
+		align-items: center;
+		justify-content:
+	}
+	.call-to-action-btn {
+		width: 100%;
+		margin-bottom: 10px;
+		margin-right: 0px;
+	}
+
 }
 
 </style>
@@ -328,7 +392,7 @@ var STYLE_PREFIX = 'wsite';
 			<div class="row">
 				<div class="col-md-6 col-xs-12">
 					<img src="/uploads/1/0/9/9/109947473/editor/305009710.jpeg?1503068479" alt="" class="products-image">
-					<div class="products-title">Proyects</div>
+					<div class="products-title">Proyectos</div>
 					<div class="products-text">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</div>
@@ -339,6 +403,26 @@ var STYLE_PREFIX = 'wsite';
 					<div class="products-text">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</div>
+				</div>
+			</div>
+		</div>
+		<div class="team-container container">
+			<div class="products-secondary-title"><strong>Equipo de trabajo</strong><br /></div>
+			<div class="partners-container">
+				<div class="partner-container">
+					<img src="./uploads/new_assets/partner_logo_placeholder.png" alt="" class="partner-logo">
+				</div>
+				<div class="partner-container">
+					<img src="./uploads/new_assets/partner_logo_placeholder.png" alt="" class="partner-logo">
+				</div>
+				<div class="partner-container">
+					<img src="./uploads/new_assets/partner_logo_placeholder.png" alt="" class="partner-logo">
+				</div>
+				<div class="partner-container">
+					<img src="./uploads/new_assets/partner_logo_placeholder.png" alt="" class="partner-logo">
+				</div>
+				<div class="partner-container">
+					<img src="./uploads/new_assets/partner_logo_placeholder.png" alt="" class="partner-logo">
 				</div>
 			</div>
 		</div>
@@ -358,6 +442,13 @@ var STYLE_PREFIX = 'wsite';
 			</div>
 		</div>
 		</div> -->
+		<div class="call-to-action-container container">
+			<div class="row">
+				<div class="call-to-action-row">
+					<button class="btn btn-primary call-to-action-btn" type="button" name="button">CALLIT</button> # CALL TO ACTION #
+				</div>
+			</div>
+		</div>
 		<div class="developer-footer">Sitio desarrollado por # Developer #. A cargo de <a href="http://www.hostgator.mx" target="_blank">Hostgator Mexico</a></div>
 
 	</div>
