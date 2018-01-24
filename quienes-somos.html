@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>quienes somos - Ladder Mexico</title><meta property="og:site_name" content="Ladder Mexico" />
+		<title>Nosotros - Ladder Mexico</title><meta property="og:site_name" content="Ladder Mexico" />
 <meta property="og:title" content="quienes somos" />
 <meta property="og:description" content="LADDER (Especialistas en control y automatización de México)." />
 <meta property="og:image" content="http://ladder.com.mx/uploads/1/0/9/9/109947473/published/img-1953.jpg?1503036263" />
@@ -15,7 +15,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
 
-		
+
 		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="//cdn2.editmysite.com/css/sites.css?buildTime=1503351451" />
 <link rel="stylesheet" type="text/css" href="//cdn2.editmysite.com/css/old/fancybox.css?1503007006" />
 <link rel="stylesheet" type="text/css" href="//cdn2.editmysite.com/css/social-icons.css?buildtime=1503007006" media="screen,projection" />
@@ -80,6 +80,83 @@
 <style>
 .wsite-background {background-image: url("/uploads/1/0/9/9/109947473/background-images/1955191062.png") !important;background-repeat: no-repeat !important;background-position: 50.00% 76.08% !important;background-size: 100% !important;background-color: transparent !important;}
 body.wsite-background {background-attachment: fixed !important;}.wsite-background.wsite-custom-background{ background-size: cover !important}
+
+.about-us-container {
+	padding: 2em;
+}
+.about-us-text {
+	margin: 1em 0px;
+	font-size: 1.5em;
+	text-align: justify;
+}
+.wsite-content-title {
+	font-family: Lato !important;
+	font-size: 2em;
+}
+.media-container {
+	margin-top: 10px;
+	position: relative;
+}
+.about-us-media-title {
+	width: 100%;
+	height: 100%;
+	font-size: 5em;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	font-family: Advent Pro;
+	top: 0;
+}
+.contact-header {
+	width: 100%;
+	height: auto;
+	background: #113C5C;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px 0px;
+	color: white;
+	min-height: 30px;
+}
+.developer-footer {
+	height: 50px;
+	background: gray;
+	width: auto;
+	display: flex;
+	padding: 10px;
+	align-items: center;
+	justify-content: flex-start;
+}
+body.menu-open > #banner-wrap > .sticky-wrapper > #header-wrap > #mobile-nav {
+	display: block;
+	position: fixed;
+	transition: none;
+}
+#mobile-nav {
+	height: 100%;
+	width: 100%;
+	background: white;
+	display: none;
+}
+#mobile-nav > ul > li {
+	font-size: 1.5em;
+	margin-top: 1em;
+}
+.wsite-menu-item {
+	color: #113C5C !important;
+}
+@media screen and (min-width: 320px) and (max-width: 680px) {
+	.about-us-media-title {
+		font-size: 3em;
+	}
+	.about-us-container {
+		padding: 1em 2em;
+	}
+}
 </style>
 		<script>
 var STATIC_BASE = '//cdn1.editmysite.com/';
@@ -91,8 +168,8 @@ var STYLE_PREFIX = 'wsite';
 <script type="text/javascript" src="//cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1503007006&"></script>
 <script src="//cdn2.editmysite.com/js/site/main.js?buildTime=1503351451"></script><script type="text/javascript">_W.resellerSite = true;</script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
 <script type="text/javascript" src="//cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1503351451&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"><!--
-	
-	
+
+
 	function initFlyouts(){
 		initPublishedFlyoutMenus(
 			[{"id":"248502921123376418","title":"inicio","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"526646547955105866","title":"Quienes somos","url":"quienes-somos.html","target":"","nav_menu":false,"nonclickable":false},{"id":"454677903357412231","title":"Productos","url":"productos.html","target":"","nav_menu":false,"nonclickable":false},{"id":"348659541506008480","title":"BLOG","url":"blog.html","target":"","nav_menu":false,"nonclickable":false},{"id":"735143605499080371","title":"Contacto","url":"contacto.html","target":"","nav_menu":false,"nonclickable":false}],
@@ -106,10 +183,18 @@ var STYLE_PREFIX = 'wsite';
 	}
 //-->
 </script>
-		
-		
+
+
 	</head>
 	<body class="no-header-page  wsite-theme-light  wsite-page-quienes-somos full-width-on "><div id="banner-wrap">
+		<div class="contact-header">
+			<div class="contact-header-number">
+				#number
+			</div>
+			<div class="contact-header-mail">
+				#mail
+			</div>
+		</div>
 		<div id="header-wrap">
 			<div id="header" class="container">
 				<label id="nav-trigger" class="hamburger" for="mobile-input"><span></span></label>
@@ -121,32 +206,41 @@ var STYLE_PREFIX = 'wsite';
 
 </span></h1>
 				<div id="nav"><ul class="wsite-menu-default">
-		<li id="pg248502921123376418" class="wsite-menu-item-wrap">
+		<!-- <li id="pg248502921123376418" class="wsite-menu-item-wrap">
 			<a
 						href="/"
 				class="wsite-menu-item"
 				>
 				inicio
 			</a>
-			
-		</li>
+
+		</li> -->
 		<li id="active" class="wsite-menu-item-wrap">
 			<a
 						href="/quienes-somos.html"
 				class="wsite-menu-item"
 				>
-				Quienes somos
+				Nosotros
 			</a>
-			
+
 		</li>
 		<li id="pg454677903357412231" class="wsite-menu-item-wrap">
 			<a
 						href="/productos.html"
 				class="wsite-menu-item"
 				>
-				Productos
+				Servicios
 			</a>
-			
+
+		</li>
+		<li id="pg454677903357412231" class="wsite-menu-item-wrap">
+			<a
+						href="/quienes-somos.html"
+				class="wsite-menu-item"
+				>
+				Portafolio
+			</a>
+
 		</li>
 		<li id="pg348659541506008480" class="wsite-menu-item-wrap">
 			<a
@@ -155,7 +249,7 @@ var STYLE_PREFIX = 'wsite';
 				>
 				BLOG
 			</a>
-			
+
 		</li>
 		<li id="pg735143605499080371" class="wsite-menu-item-wrap">
 			<a
@@ -164,39 +258,48 @@ var STYLE_PREFIX = 'wsite';
 				>
 				Contacto
 			</a>
-			
+
 		</li>
 </ul>
 </div>
 			</div>
 			<div id="mobile-nav" class="container">
 				<ul class="wsite-menu-default">
-						<li id="pg248502921123376418" class="wsite-menu-item-wrap">
+						<!-- <li id="pg248502921123376418" class="wsite-menu-item-wrap">
 							<a
 										href="/"
 								class="wsite-menu-item"
 								>
 								inicio
 							</a>
-							
-						</li>
+
+						</li> -->
 						<li id="active" class="wsite-menu-item-wrap">
 							<a
 										href="/quienes-somos.html"
 								class="wsite-menu-item"
 								>
-								Quienes somos
+								Nosotros
 							</a>
-							
+
 						</li>
 						<li id="pg454677903357412231" class="wsite-menu-item-wrap">
 							<a
 										href="/productos.html"
 								class="wsite-menu-item"
 								>
-								Productos
+								Servicios
 							</a>
-							
+
+						</li>
+						<li id="active" class="wsite-menu-item-wrap">
+							<a
+										href="/quienes-somos.html"
+								class="wsite-menu-item"
+								>
+								Portafolio
+							</a>
+
 						</li>
 						<li id="pg348659541506008480" class="wsite-menu-item-wrap">
 							<a
@@ -205,7 +308,7 @@ var STYLE_PREFIX = 'wsite';
 								>
 								BLOG
 							</a>
-							
+
 						</li>
 						<li id="pg735143605499080371" class="wsite-menu-item-wrap">
 							<a
@@ -214,7 +317,7 @@ var STYLE_PREFIX = 'wsite';
 								>
 								Contacto
 							</a>
-							
+
 						</li>
 				</ul>
 			</div>
@@ -223,28 +326,45 @@ var STYLE_PREFIX = 'wsite';
 
 	<div id="main-wrap">
 		<div id="wsite-content" class="wsite-elements wsite-not-footer">
-	<div class="wsite-section-wrap">
+			<div class="about-us-container container">
+				<span class="wsite-content-title"><strong>Nosotros</strong><br /></span>
+				<div class="media-container">
+					<!-- <video muted autoplay loop style="width:100%; height: auto;">
+					  <source src="./uploads/new_assets/placeholder_video.mp4" type="video/mp4">
+					  Your browser does not support the video tag.
+					</video> -->
+					<div class="about-us-media-title">
+						LADDER
+					</div>
+					<img src="/uploads/1/0/9/9/109947473/published/img-1953.jpg?1503036263" alt="Picture" style="width:100%; height: auto;" />
+				</div>
+				<div class="about-us-text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+					<div class="developer-footer">Sitio desarrollado por # Developer #. A cargo de <a href="http://www.hostgator.mx" target="_blank">Hostgator Mexico</a></div>
+	<!-- <div class="wsite-section-wrap">
 	<div class="wsite-section wsite-body-section wsite-section-bg-image wsite-background-3 wsite-custom-background" style="height: 947px;" >
 		<div class="wsite-section-content">
 			<div class="container">
 			<div class="wsite-section-elements">
-				<h2 class="wsite-content-title"><em><strong>Quienes somos:</strong></em><br /></h2>
+				<h2 class="wsite-content-title"><em><strong>Nosotros</strong></em><br /></h2>
 
 <div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
 	<table class="wsite-multicol-table">
 		<tbody class="wsite-multicol-tbody">
 			<tr class="wsite-multicol-tr">
 				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
-					
-						
+
+
 
 <div class="paragraph" style="text-align:justify;"><font size="3"><font size="4"><strong>LADDER</strong></font> es una empresa <font size="4"><strong>especialista en el ramo de la automatizaci&oacute;n</strong></font>, nuestra experiencia nos posiciona como una opci&oacute;n efectiva para sus soluciones.<br />Nos caracterizamos por ofrecer un <font size="4"><strong>servicio de alta calidad</strong></font>, a un costo accesible adem&aacute;s de que nuestro trabajo <strong><font size="4">siempre esta garantizado</font></strong>, ya que <strong>nos apasiona lo que hacemos</strong>.<br /><strong><font size="4" color="#2a2a2a">Somos profesionales</font> </strong>que nos interesa que el resultado de nuestro trabajo y que las <strong>satisfacci&oacute;n del cliente sea total</strong> esa es nuestra garant&iacute;a.<br />Trabajamos para estar <font size="4"><strong>siempre actualizados</strong></font>, por lo cual siempre evaluamos <font size="4"><strong>cualquier necesidad</strong> de nuestros clientes</font> y proponemos diferentes soluciones.</font><br /></div>
 
 
-					
+
 				</td>				<td class="wsite-multicol-col" style="width:50%; padding:0 15px;">
-					
-						
+
+
 
 <div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
 <a>
@@ -254,31 +374,26 @@ var STYLE_PREFIX = 'wsite';
 </div></div>
 
 
-					
+
 				</td>			</tr>
 		</tbody>
 	</table>
 </div></div></div>
 			</div>
-		</div>
+		</div> -->
 		</div>
 
 	</div>
 </div>
 
 </div>
-
-	</div>
-
-	<div id="footer-wrap">
-		<div class="container"><div class='wsite-elements wsite-footer'>Sitio desarrollado por Weebly. A cargo de<a href="http://www.hostgator.mx" target="_blank">Hostgator Mexico</a></div></div>
 	</div>
 
 	<script type="text/javascript" src="/files/theme/plugins.js?1502902050"></script>
 	<script type="text/javascript" src="/files/theme/custom.js?1502902050"></script>
 
 
-		
+
 
 	</body>
 </html>
