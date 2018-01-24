@@ -80,6 +80,45 @@
 <style>
 .wsite-background {background-image: url("/uploads/1/0/9/9/109947473/background-images/1955191062.png") !important;background-repeat: no-repeat !important;background-position: 50.00% 76.08% !important;background-size: 100% !important;background-color: transparent !important;}
 body.wsite-background {background-attachment: fixed !important;}.wsite-background.wsite-custom-background{ background-size: cover !important}
+
+.contact-header {
+	width: 100%;
+	height: auto;
+	background: #113C5C;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px 0px;
+	color: white;
+	min-height: 30px;
+}
+.developer-footer {
+	height: 50px;
+	background: gray;
+	width: auto;
+	display: flex;
+	padding: 10px;
+	align-items: center;
+	justify-content: flex-start;
+}
+body.menu-open > #banner-wrap > .sticky-wrapper > #header-wrap > #mobile-nav {
+	display: block;
+	position: fixed;
+	transition: none;
+}
+#mobile-nav {
+	height: 100%;
+	width: 100%;
+	background: white;
+	display: none;
+}
+#mobile-nav > ul > li {
+	font-size: 1.5em;
+	margin-top: 1em;
+}
+.wsite-menu-item {
+	color: #113C5C !important;
+}
 </style>
 		<script>
 var STATIC_BASE = '//cdn1.editmysite.com/';
@@ -110,6 +149,14 @@ var STYLE_PREFIX = 'wsite';
 
 	</head>
 	<body class="no-header-page  wsite-theme-light  wsite-page-contacto full-width-on "><div id="banner-wrap">
+		<div class="contact-header">
+			<div class="contact-header-number">
+				#number
+			</div>
+			<div class="contact-header-mail">
+				#mail
+			</div>
+		</div>
 		<div id="header-wrap">
 			<div id="header" class="container">
 				<label id="nav-trigger" class="hamburger" for="mobile-input"><span></span></label>
@@ -121,21 +168,12 @@ var STYLE_PREFIX = 'wsite';
 
 </span></h1>
 				<div id="nav"><ul class="wsite-menu-default">
-		<li id="pg248502921123376418" class="wsite-menu-item-wrap">
-			<a
-						href="/"
-				class="wsite-menu-item"
-				>
-				inicio
-			</a>
-
-		</li>
 		<li id="pg526646547955105866" class="wsite-menu-item-wrap">
 			<a
 						href="/quienes-somos.html"
 				class="wsite-menu-item"
 				>
-				Quienes somos
+				Nosotros
 			</a>
 
 		</li>
@@ -144,7 +182,16 @@ var STYLE_PREFIX = 'wsite';
 						href="/productos.html"
 				class="wsite-menu-item"
 				>
-				Productos
+				Servicios
+			</a>
+
+		</li>
+		<li id="pg526646547955105866" class="wsite-menu-item-wrap">
+			<a
+						href="/portafolio.html"
+				class="wsite-menu-item"
+				>
+				Portafolio
 			</a>
 
 		</li>
@@ -171,21 +218,12 @@ var STYLE_PREFIX = 'wsite';
 			</div>
 			<div id="mobile-nav" class="container">
 				<ul class="wsite-menu-default">
-						<li id="pg248502921123376418" class="wsite-menu-item-wrap">
-							<a
-										href="/"
-								class="wsite-menu-item"
-								>
-								inicio
-							</a>
-
-						</li>
 						<li id="pg526646547955105866" class="wsite-menu-item-wrap">
 							<a
 										href="/quienes-somos.html"
 								class="wsite-menu-item"
 								>
-								Quienes somos
+								Nosotros
 							</a>
 
 						</li>
@@ -194,7 +232,16 @@ var STYLE_PREFIX = 'wsite';
 										href="/productos.html"
 								class="wsite-menu-item"
 								>
-								Productos
+								Servicios
+							</a>
+
+						</li>
+						<li id="pg526646547955105866" class="wsite-menu-item-wrap">
+							<a
+										href="/portafolio.html"
+								class="wsite-menu-item"
+								>
+								Portafolio
 							</a>
 
 						</li>
@@ -312,11 +359,11 @@ var STYLE_PREFIX = 'wsite';
 
 </div>
 
+	<div class="developer-footer">Sitio desarrollado por # Developer #. A cargo de <a href="http://www.hostgator.mx" target="_blank">Hostgator Mexico</a></div>
+
 	</div>
 
-	<div id="footer-wrap">
-		<div class="container"><div class='wsite-elements wsite-footer'>Sitio desarrollado por Weebly. A cargo de<a href="http://www.hostgator.mx" target="_blank">Hostgator Mexico</a></div></div>
-	</div>
+
 
 	<script type="text/javascript" src="/files/theme/plugins.js?1502902050"></script>
 	<script type="text/javascript" src="/files/theme/custom.js?1502902050"></script>
