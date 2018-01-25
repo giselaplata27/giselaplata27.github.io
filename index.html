@@ -111,6 +111,7 @@ body.wsite-background {background-attachment: fixed !important;}.wsite-backgroun
 .carousel-item > img {
 	width: 100%;
 	height: auto;
+	/* filter: grayscale(50%); */
 }
 body.menu-open > #banner-wrap > .sticky-wrapper > #header-wrap > #mobile-nav {
 	display: block;
@@ -138,11 +139,11 @@ body.menu-open > #banner-wrap > .sticky-wrapper > #header-wrap > #mobile-nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background: rgba(17, 60, 92, 0.5);
 }
 
 .catch-frase-text {
 	width: 65%;
-	/* background: rgba(0,0,0,0.4); */
 	height: auto;
 	padding: 20px;
 	text-align: center;
@@ -238,8 +239,6 @@ body.menu-open > #banner-wrap > .sticky-wrapper > #header-wrap > #mobile-nav {
     background-image: url("/uploads/1/0/9/9/109947473/foto-combinada-1_orig.jpg");
 
     /* Set a specific height */
-    height: 500px;
-		padding: 5% 20%;
 		margin-bottom: 50px;
 
     /* Create the parallax scrolling effect */
@@ -251,14 +250,22 @@ body.menu-open > #banner-wrap > .sticky-wrapper > #header-wrap > #mobile-nav {
 		color: white;
 		font-family: Lato;
 }
+.parallax-container {
+	background: red;
+	width: 100%;
+	height: 100%;
+	height: 500px;
+	padding: 5% 20%;
+	background: rgba(17, 60, 92, 0.5);
+}
 .parallax > h1 {
 	font-size: 3em;
 	margin-bottom: 10px;
 }
-.parallax > ul {
+.parallax-container > ul {
 	font-size: 1.5em;
 }
-.parallax > ul > li {
+.parallax-container > ul > li {
 	margin-bottom: 5px;
 }
 .footer-submenu-container {
@@ -458,19 +465,41 @@ var STYLE_PREFIX = 'wsite';
 					<div class="carousel-inner">
 						<div class="carousel-item active">
 							<div class="catch-frase">
-								<div class="catch-frase-text"><p class="animated slideInUp">Desarrollo y evolución de procesos</p></div>
+								<div class="catch-frase-text"><p class="animated slideInUp">
+									Servicios de alta calidad
+								</p></div>
 							</div>
-							<img class="d-block w-100" src="/uploads/1/0/9/9/109947473/foto-combinada-1_orig.jpg" alt="First slide">
+							<img class="d-block w-100" src="/uploads/new_assets/carousel1.jpeg" alt="First slide">
 						</div>
 						<div class="carousel-item">
 							<div class="catch-frase">
-								<div class="catch-frase-text"><p class="animated slideInUp">Desarrollo y evolución de procesos</p></div>
+								<div class="catch-frase-text"><p class="animated slideInUp">
+									Eficiencia y seguridad de sus equipos
+								</p></div>
 							</div>
 							<img class="d-block w-100" src="/uploads/1/0/9/9/109947473/foto-combinada-1_orig.jpg" alt="Second slide">
 						</div>
 						<div class="carousel-item">
 							<div class="catch-frase">
-								<div class="catch-frase-text"><p class="animated slideInUp">Desarrollo y evolución de procesos</p></div>
+								<div class="catch-frase-text"><p class="animated slideInUp">
+									Diagnóstico de equipos para prevención de futuras fallas
+								</p></div>
+							</div>
+							<img class="d-block w-100" src="/uploads/1/0/9/9/109947473/foto-combinada-1_orig.jpg" alt="Third slide">
+						</div>
+						<div class="carousel-item">
+							<div class="catch-frase">
+								<div class="catch-frase-text"><p class="animated slideInUp">
+									Desarrollo y evolución de procesos
+								</p></div>
+							</div>
+							<img class="d-block w-100" src="/uploads/1/0/9/9/109947473/foto-combinada-1_orig.jpg" alt="Third slide">
+						</div>
+						<div class="carousel-item">
+							<div class="catch-frase">
+								<div class="catch-frase-text"><p class="animated slideInUp">
+									Optimización de tareas
+								</p></div>
 							</div>
 							<img class="d-block w-100" src="/uploads/1/0/9/9/109947473/foto-combinada-1_orig.jpg" alt="Third slide">
 						</div>
@@ -589,12 +618,14 @@ var STYLE_PREFIX = 'wsite';
 	</div>
 	<div id="main-wrap">
 		<div class="parallax">
-			<h1>#Title</h1>
-			<ul>
-				<li>#item</li>
-				<li>#item</li>
-				<li>#item</li>
-			</ul>
+			<div class="parallax-container">
+				<h1>#Title</h1>
+				<ul>
+					<li>#item</li>
+					<li>#item</li>
+					<li>#item</li>
+				</ul>
+			</div>
 		</div>
 		<!-- <div id="wsite-content" class="wsite-elements wsite-not-footer">
 			<div class="wsite-section-wrap">
