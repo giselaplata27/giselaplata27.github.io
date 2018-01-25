@@ -10,6 +10,15 @@
 
 <link rel="icon" href="./uploads/new_assets/icon.ico" />
 
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+<!-- fontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <meta name="description" content="LADDER (Especialistas en control y automatización de México)." />
 <meta name="keywords" content="ladder,control,automatización,servicios,monterrey,Coahuila,industrial,soporte,programación,siemens,allen,bradley,rockwell,omrom,keyence,sew,red,lion,abb,wonderware,intouch,cognex,honeywell," />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -149,6 +158,36 @@ body.menu-open > #banner-wrap > .sticky-wrapper > #header-wrap > #mobile-nav {
 .wsite-menu-item {
 	color: #113C5C !important;
 }
+.post-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.post-container {
+	padding-top: 1em;
+	margin-left: 1em;
+}
+.post-title {
+	font-size: 1.5em;
+	color: black;
+	margin-bottom: 5px;
+}
+.post-image {
+	width: 100%;
+	height: auto;
+}
+.post-image > img {
+	width: 100%;
+	height: auto;
+}
+.author {
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.author-description {
+	margin-bottom: 20px;
+}
 @media screen and (min-width: 320px) and (max-width: 680px) {
 	.about-us-media-title {
 		font-size: 3em;
@@ -156,6 +195,26 @@ body.menu-open > #banner-wrap > .sticky-wrapper > #header-wrap > #mobile-nav {
 	.about-us-container {
 		padding: 1em 2em;
 	}
+	.post-container {
+		padding: 0px;
+		margin-top: 1em;
+		margin-left: 0em;
+	}
+	.post-content {
+		flex-direction: column;
+		padding: 0px;
+	}
+	.post-image {
+		margin-bottom: 10px;
+	}
+	.post-text {
+		text-align: justify;
+	}
+	.blog-info {
+		padding: 0px;
+		margin-top: 1em;
+	}
+
 }
 </style>
 		<script>
@@ -328,6 +387,62 @@ var STYLE_PREFIX = 'wsite';
 		<div id="wsite-content" class="wsite-elements wsite-not-footer">
 			<div class="about-us-container container">
 				<span class="wsite-content-title"><strong>Blog</strong><br /></span>
+				<div class="blog-container row">
+					<div class="post-container container col-md-9 col-xs-12">
+							<div class="post-title">
+								Pequeños Proyectos ?
+							</div>
+							<div class="post-date">
+								8/18/2017
+							</div>
+							<hr>
+							<div class="post-content row">
+								<div class="post-image col-md-6 col-xs-12">
+									<img src="/uploads/1/0/9/9/109947473/published/img-1953.jpg?1503036263" alt="">
+								</div>
+								<div class="post-text col-md-6 col-xs-12">
+									Las empresas han tratado de encontrar soluciones a sus proceso
+									que ayuden a ser mas eficientes, muchas veces las grandes
+									inversiones han sido la solucion y en ocasiones ni esta a
+									ayudado a lograr este objetivo.
+									<br>
+									En la automatización existen múltiples variables que podría uno
+									como automatista manipular, pero a veces no se explotan al 100%
+									dichas capacidades.
+									<br>
+									hemos encontrado que existen proyectos en los cuales hay que
+									realizar 0 inversión y solo reutilizar o transformar lo ya
+									instalado y el impacto ha sido mucho mayor que el conseguido
+									por una inversion en una máquina nueva automatizada.
+									<br>
+									Debemos ampliar nuestra imagen y pensar fuera de la caja para
+									conseguirlo, utilizar todos los recursos a nuestro alcance
+									hasta agotarlos.
+								</div>
+							</div>
+					</div>
+					<div class="blog-info col-md-2 col-xs-12">
+						<div class="author">
+							Dr. PLC
+						</div>
+						<div class="author-description">
+							El conocimiento es el arma mas poderosa del hombre.
+						</div>
+						<div class="author">
+							Publicado
+						</div>
+						<div class="author-description">
+							August 2017
+						</div>
+						<div class="author">
+							Categories
+						</div>
+						<div class="author-description">
+							All
+						</div>
+					</div>
+				</div>
+
 			</div>
 					<div class="developer-footer">Sitio desarrollado por # Developer #. A cargo de <a href="http://www.hostgator.mx" target="_blank">Hostgator Mexico</a></div>
 	<!-- <div class="wsite-section-wrap">
