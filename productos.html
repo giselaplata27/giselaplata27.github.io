@@ -123,6 +123,7 @@ body.menu-open > #banner-wrap > .sticky-wrapper > #header-wrap > #mobile-nav {
 	width: 100%;
 	height: auto;
 	margin-bottom: 30px;
+  min-height: 310px;
 }
 .products-title {
 	font-size: 2em;
@@ -175,13 +176,34 @@ body.menu-open > #banner-wrap > .sticky-wrapper > #header-wrap > #mobile-nav {
 	justify-content: center;
 	align-items: center;
 	font-size: 2em;
+	font-family: Lato;
 }
 .call-to-action-btn {
 	margin-right: 30px;
 	width: 300px;
 	padding: 20px 0px;
+	background-color: #013A5F;
+}
+.call-to-action-btn:hover {
+	background-color: #013A5F;
+}
+
+.mailto {
+	font-size: 2em;
+	color: #EEEB13;
+}
+.mailto > .icon {
+	font-size: 1em;
+	color: #EEEB13;
+}
+.mailto:hover {
+	color: #EEEB13;
+	text-decoration: none;
 }
 @media screen and (min-width: 320px) and (max-width: 680px) {
+	.products-image {
+		min-height: auto;
+	 }
 	.about-us-media-title {
 		font-size: 3em;
 	}
@@ -393,7 +415,7 @@ var STYLE_PREFIX = 'wsite';
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-xs-12">
-					<img src="/uploads/1/0/9/9/109947473/editor/305009710.jpeg?1503068479" alt="" class="products-image">
+					<img src="/uploads/new_assets/proyectos.jpeg" alt="" class="products-image">
 					<div class="products-title">Proyectos</div>
 					<div class="products-text">
 						<ul>
@@ -406,7 +428,7 @@ var STYLE_PREFIX = 'wsite';
 					</div>
 				</div>
 				<div class="col-md-6 col-xs-12">
-					<img src="/uploads/1/0/9/9/109947473/editor/305009710.jpeg?1503068479" alt="" class="products-image">
+					<img src="/uploads/new_assets/servicios2.jpeg" alt="" class="products-image">
 					<div class="products-title">Servicios</div>
 					<div class="products-text">
 						<ul>
@@ -428,16 +450,22 @@ var STYLE_PREFIX = 'wsite';
 					<img src="./uploads/new_assets/partner_logo_placeholder.png" alt="" class="partner-logo">
 				</div>
 				<div class="partner-container">
-					<img src="./uploads/new_assets/partner_logo_placeholder.png" alt="" class="partner-logo">
+					<img src="./uploads/new_assets/siemens.jpg" alt="" class="partner-logo">
 				</div>
 				<div class="partner-container">
-					<img src="./uploads/new_assets/partner_logo_placeholder.png" alt="" class="partner-logo">
+					<img src="./uploads/new_assets/meddler.jpeg" alt="" class="partner-logo">
 				</div>
 				<div class="partner-container">
-					<img src="./uploads/new_assets/partner_logo_placeholder.png" alt="" class="partner-logo">
+					<img src="./uploads/new_assets/abb.jpeg" alt="" class="partner-logo">
 				</div>
 				<div class="partner-container">
-					<img src="./uploads/new_assets/partner_logo_placeholder.png" alt="" class="partner-logo">
+					<img src="./uploads/new_assets/honeywell.png" alt="" class="partner-logo">
+				</div>
+				<div class="partner-container">
+					<img src="./uploads/new_assets/omron.jpeg" alt="" class="partner-logo">
+				</div>
+				<div class="partner-container">
+					<img src="./uploads/new_assets/wonderware.jpeg" alt="" class="partner-logo">
 				</div>
 			</div>
 		</div>
@@ -460,7 +488,7 @@ var STYLE_PREFIX = 'wsite';
 		<div class="call-to-action-container container">
 			<div class="row">
 				<div class="call-to-action-row">
-					<button class="btn btn-primary call-to-action-btn" type="button" name="button">CALLIT</button> # CALL TO ACTION #
+					<button class="btn btn-primary call-to-action-btn" type="button" name="button"><a class="mailto" href="mailto:arturo.garza@ladder.com.mx">¡Contáctanos! <i class="fa fa-envelope-o icon" aria-hidden="true"></i></a></button>
 				</div>
 			</div>
 		</div>
